@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    <title></title>
+  
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.2.css">
+
+    <link rel="stylesheet" href="css/gs.css">
+  
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="home">
+    <div>
+        <div>
+            <img class="gb-img" src="img/SteveBolze.png" alt="image"/>
+        </div>
+        <div class="gb-name">
+            Steve Bolze
+        </div>
+        <div class="gb-job">
+          CEO, General Electric
+        </div>
+
+        <div id="news" class="hlist">
+            
+        </div>
+    </div>
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top" class="bar-style">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Articles -->
+<div data-role="page" id="articles">
+    <div class="page-title">
+        <span class="title">Articles</span>
+    </div>
+    <ul id="articleList" data-role="listview" data-divider-theme="b" class="list">
+        <li data-theme="c" class="vi-bullet">
+            <a href="#v1" data-transition="slide" onclick="playSelectedVideo('video1')">
+                <div class="source">Russell Reynolds Associates</div><div class="ar-date">Jan 16, 2013</div><br/>
+                <div class="ar-title">Cardinal Health's Chairman & CEO George Barrett on Board Leadership</div>
+            </a>
+        </li>
+        
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a7" data-transition="slide">
+                <div class="source">The Columbus Dispatch</div><div class="ar-date">May 19, 2013</div><br/>
+                <div class="ar-title">Cardinal Health's CEO uses background to think outside the box</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a11" data-transition="slide">
+                <div class="source">Columbus C.E.O</div><div class="ar-date">Nov 17, 2013</div><br/>
+                <div class="ar-title">Cardinal CEO George Barrett: ‘Navigating’ amid health-care storm</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a2" data-transition="slide">
+                <div class="source">Columbus Biz Insider</div><div class="ar-date">May 02, 2013</div><br/>
+                <div class="ar-title">Cardinal Health CEO George Barrett not sounding wounded over Walgreens walking</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a6" data-transition="slide">
+                <div class="source">Columbus C.E.O</div><div class="ar-date">Apr 2013</div><br/>
+                <div class="ar-title">Shattering the Ceiling</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a8" data-transition="slide">
+                <div class="source">dealbook.nytimes.com</div><div class="ar-date">Feb 14, 2013</div><br/>
+                <div class="ar-title">Cardinal Health Is Buying Large Medical Supplier for $2 Billion</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a1" data-transition="slide">
+                <div class="source">New York Times</div><div class="ar-date">Jan 16, 2013</div><br/>
+                <div class="ar-title">World of CEOs – George Barrett</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a5" data-transition="slide">
+                <div class="source">Cardinal Health</div><div class="ar-date">Dec 10, 2012</div><br/>
+                <div class="ar-title">Statement of Chairman and CEO George Barrett Fortune 21 Cardinal Health Regarding Fiscal Cliff</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a3" data-transition="slide">
+                <div class="source">Examiner.com</div><div class="ar-date">Aug 21, 2010</div><br/>
+                <div class="ar-title">George S. Barrett (Cardinal Health) in "the Corner Office”</div>
+            </a>
+        </li>        
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a9" data-transition="slide">
+                <div class="source">staplessoccer.wordpress.com</div><div class="ar-date">Aug 15, 2010</div><br/>
+                <div class="ar-title">Profile: George Barrett ’73, CEO of Cardinal Health</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a4" data-transition="slide">
+                <div class="source">New York Times</div><div class="ar-date">Aug 14, 2010</div><br/>
+                <div class="ar-title">Team Insights? Just Use Your Peripheral Vision</div>
+            </a>
+        </li>
+    </ul>
+    
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--v1-->
+<div data-role="page" id="v1">
+    <a class="back arrow" href='#articles' data-transition="slide" onclick="stopCurrentVideo();">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        Cardinal Health's Chairman & CEO George Barrett on Board Leadership
+    </div>
+    <div class="a-body">
+        <video id="video1" style="width:300px" controls>
+            <source src="http://54.215.134.149:8080/file/getFile/g1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<!--a1-->
+<div data-role="page" id="a1">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        World of CEOs – George Barrett
+    </div>
+    <div class="a-body">
+        <div class="p-header">CEO DOSSIER</div>
+        <div>
+            In a sector undergoing enormous change, George has ensured that Cardinal Health, one of the world's largest health care companies, has adapted to its environment, and grown significantly. But is the future stable for this rapidly ballooning organisation?
+        </div>
+        <div class="gray-header">EARLY YEARS</div>
+        <div>George received his Bachelor of Arts degree from Brown University in 1977 and a Master of Business Administration from New York University in 1988. George began his management career at NMC Laboratories, a small pharmaceutical company, working his way through the ranks to seniority and negotiating the company’s acquisition by Alpharma Inc. in 1988. “I was running a company that was acquired by a bigger firm. I stayed with them after the acquisition, and then I got a call from the chairman and he said: “We’re having some issues with our flagship company. Would you be willing to come in and run it?” I was 34 years old, and I said to myself: “Well, it’s already struggling. How badly could I mess it up?” So I went there. “I was very clear and direct about what I thought we were facing and what we needed to do about it, without blame...I expect people to be that way with me.”</div><div><br></div><div>He served as President of Barre National, a subsidiary of Alpharma Inc., from 1991 to 1994 and President of Alpharma's U.S. pharmaceutical group from 1994 to 1997. He then moved on to take up the roles of President and CEO of Diad Research, a technology start-up with headquarters at John Hopkins School of Medicine. He then a held a number of executive positions with Teva Pharmaceuticals Industries, Inc., including President and CEO of Teva North America and Corporate Executive Vice President of Global Pharmaceutical Markets, before finally taking Presidency in 1999, a post he held until 2007.&nbsp;</div><div><br></div><div>On September 29, 2008 the company announced Kerry Clark would retire and George Barrett would become the Chairman and CEO of Cardinal Health. Currently, George also serves on the board of directors of Nationwide Children’s Hospital and the President’s Leadership Council of Brown University. He serves on the board of trustees of the Healthcare Leadership Council and The Conference Board. He is also a member of the Business Roundtable, The Business Council, Ohio Business Roundtable and The Columbus Partnership.</div>
+
+        <div class="gray-header">AS CEO</div>
+        <div>Since George’s initiation, Cardinal Health has produced strong annualised total returns, at 21% versus 13% for the wider market, met the hundred billion dollar revenue milestone, and has expanded to accommodate almost 32,000 employees. However, the survival of the company has been subject to a number of pressures during George’s tenure which have required significant changes to the company structure and the management of its portfolio. George says, “the word reinvention is used a lot these days and probably means a lot of different things to different folks. I think for us this is a time of extraordinary change. It is for many businesses, but certainly those of us in healthcare realize that we're in a system that's undergoing a lot of unique pressures. You've got enormous population health issues. You've got still a large number of uninsured or under-insured Americans. You've got issues of public health, and issues around demographics that are really creating a huge challenge when you think about the economic impact for us. So we've thought a lot about the reinvention of the company and I think all companies need to do this. I think the constant evaluation of where you are, what your portfolio looks like in the midst of changes is a critical thing for us.”</div><div><br></div><div>Sweeping change was necessary during George’s term. In the early months of his tenure, the prognosis was unpromising. Cardinal had lost a third of its value the previous year. The U.S. Drug Enforcement Administration had suspended several of the company's licenses, accusing the firm of filling in fake prescriptions. What's more, Ohio-based firm faced a difficult decision as to whether or not to spin off its lucrative medical-tech arm, CareFusion, and face double-digit drop in its stock price as a result. In other words, as Barrett commented with a typical level-headedness "we had some challenges." The $4.5bn in revenue producer of clinical and medical products was difficult for Barrett to part with "I really like the product business," Barrett says. "That is familiar turf for me." But Cardinal and CareFusion, at odds for capital, were beginning to clash at a management level, and the distribution units, he says, "had started to atrophy a bit." The spin-off was a crucial part of a portfolio simplification-strategy which has earned George the respect of his colleagues. "This is an entirely different company," says Mike Lynch, who heads Cardinal's medical-supply unit. "We've seen a much needed reinfusion of capital into our core businesses, a clarity of vision, a renewed sense of purpose. The optimism is palpable."&nbsp;</div><div><br></div><div>George has enforced a return to Business-101 principles: strong leadership, better customer service and refocusing on what the company, and indeed George himself, does best - supply-chain management. Cardinal's aggressive acquisition policy under its founding CEO – by which Cardinal grew from a small Ohio food distributor in 1971 to a $74bn dollar conglomerate in thirty years – was recognisably unsustainable. George concentrated on narrowing the company’s client scope, luring back independent-pharmacy customers, which are more profitable and rely on wholesalers for generics. He quickly settled the DEA’s allegations. He narrowed Cardinal's sources for generics from 120 to a few dozen to ensure that it could consistently offer the lowest prices. After the CareFusion spin-off, the company reorganized its retail-franchise model, Medicine Shoppe, and strengthened its nuclear-medicine program, now one of its most lucrative.</div><div><br></div><div>Today, George has plans to push their core business beyond drug distribution. "We have an economy that will not tolerate health care accelerating at the same rate that it has been accelerating for the past couple of decades," he says. The nation's aging population "is suffering from chronic illness in a system that was really built to treat acute illness." He imagines a future in which care will be delivered through a dispersed network - ambulatory centers and other outpatient facilities – rather than almost solely at hospitals, which are expensive to build, difficult to run and often inconveniently located. "We always had a huge presence in the hospitals and the pharmacies, but we've been growing our presence in the ambulatory settings." This, he says, is Cardinal Health’s future.</div>
+
+        <div class="gray-header">AWAY FROM WORK</div>
+        <div>In high school, George was passionate about sports, aiming to pursue a professional soccer career until receiving a major injury in his senior year which put a stop to his aspirations. ‘I was sort of bitter for a while, which is not really in my nature’, but, ‘I came out of it with a different perspective, and I discovered that I had other talents that maybe I could dig more deeply into. I was able to explore my passion for music, which actually led me to pursue a professional music career for a while. So I found that there was another side of me.’ George went on to study music and history at Brown University, before being invited to study with a voice coach working with New York's Metropolitan Opera. He remains an accomplished he's also an accomplished pianist, guitarist, and French-horn player to this day.&nbsp;</div><div><br></div><div>After college, George improvised a short music career as a folk-guitarist, landing performance spots at small gigs and bars in his local area. "I realized, about two and a half years into this, that while I loved being onstage and I loved being in the recording studio and I loved the music, everything else about the business I didn't like," he says. His observations on the music industry (as well as his difficult financial circumstances and the gentle coercion of his fiancé’s father) steered him into business, working for a small dermatology-related firm. His interest in both music and sport has not only remained intact throughout his business career, but, he maintains, his liberal arts background furnished him with the skills needed for success: "I came to look at it as a source of strength." His broad education, he says, helps "to make sure I'm looking at root causes of issues and looking holistically at whatever is in front of us."</div>
+
+        <div class="gray-header">Leadership and philosophy</div>
+        <div>Barrett doesn’t put up with Yes-men. After three months as Cardinal Health CEO, he was forced to confront one executive responsible for compliance, a section riddled with issues. “I sat him down, and I said, “Look, I think it’s probably time for us to part ways.” I said: “You haven’t disagreed with me once. You haven’t challenged me, nor have you really been comfortable bringing me bad news, and that’s what I need.”” He advocates forthrightness: “You have to be comfortable with very direct feedback. I’m going to be very engaged. I’m going to probe and prod. It’s like a Socratic method with me. I’m going to continue to push on you. It’s part of the way I function. It’s part of the way I get information and I get understanding, and it’s also the way that you’ll share your thoughts with me... Leadership is a two-way street. I tell my team, “I expect to learn from you as well as you’ll learn from me.””</div><div><br></div><div>He believes that only by creating a culture of complete and direct disclosure that mutual trust between managers and staff can come about. Trust is important to George: “So much of leadership is about trust and belief. People have to believe in you. And when they stop believing in you, you can say all the things in the world, but it’s very, very hard to mobilize an organization when they’ve lost that belief... They have to really trust in your judgment because the data is so complex out there that they have to believe you can see through all the silliness and have some sense of the right course.”</div><div>Charm only gets you so far as a leader: “I think people sometimes equate leadership with charisma and decisiveness. I think those are powerful tools, and I hope I have both, but they’re not to be confused with leadership. I know a lot of very charismatic people who lack judgment and competence, and they’re not great leaders. They’re just fun to be around.”</div><div><br></div><div>His transition from CEO of smaller to larger pharmaceutical companies has come with certain challenges: “As you take on leadership roles of larger organizations with higher profiles, there are things that come with that that you’re not always ready for — realizing that every word that you say means something. If you use the word “may” instead of “might,” people think, “Well, were you telling us something?” So there was this sudden awareness of the need to be clear and careful about every symbol. When you’re leading a smaller group or organization, it’s really more about the actions. You touch everything directly. As you get into leading a bigger organization, you can’t touch everything directly, and so what you do carries symbolic weight.” George pays scrupulous attention to the symbolism of his actions on a day to day basis in the workplace, making an effort to eat with his employees regularly for example. “What do you spend your money on? When you first arrive into your position, do you spend a lot of money on new office furniture? These things seem trivial. Economically, they may not be important, but they are symbols.”</div>
+
+        <div class="gray-header">Our Three Questions</div>
+        <div>1. You stress the importance of creating the right symbolism through your personal and professional behaviour. Can high CEO compensation be taken whilst maintaining this symbolism?</div><div>2. Will there be hospitals in the US in ten years’ time? How will your business change with their disappearance?</div><div>3. Cardinal Health has encountered a fair deal of organisational difficulty as a result of overexpansion, yet, though the company structure has been significantly stripped down, growth is still very high. Will this cause any difficulties in the future?</div>
+
+        <div class="gray-header">Published</div>
+        <div>Jan 16, 2013</div>
+
+        <div class="gray-header">Sources</div>
+        <div>New York Times</div><div>Forbes</div><div>Barron’s</div><div>Time</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a2-->
+<div data-role="page" id="a2">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        Cardinal Health CEO George Barrett not sounding wounded over Walgreens walking
+    </div>
+    <div class="a-body">
+      <div>Cardinal Health Inc. CEO George Barrett doesn’t sound too broken up about his company’s split with Walgreens.</div></br>
+      <div>Talking to analysts Thursday in the Dublin-based company’s first conference call since losing its contract with Walgreen Co., he said although a customer loss is unwanted and “anything but trivial,” the writing was on the wall last June when Walgreens took a 45 percent equity stake in European pharmacy and health products chain Alliance Boots GmbH for $6.7 billion.</div><br/>
+      <div>“Over this past year, it had become increasingly difficult for us to align with Walgreens’ direction, particularly in light of their Alliance Boots acquisition,” Barrett said. “We began preparing for a future that did not include Walgreens, and Cardinal will be healthier for it in the long run.”</div><br/>
+      <div>When Walgreens (NYSE: WAG) announced March 19 that it was decamping for and buying an equity stake in Cardinal’s rival AmerisourceBergen Corp. (NYSE: ABC), Cardinal (NYSE: CAH) noted that it had prepared for the departure and said it would actually improve cash flow. The company then retained its biggest customer, CVS Caremark Corp. (NYSE: CVS).</div><br/>
+      <div>The Walgreens contract was worth about $22.6 billion of fiscal 2012 revenue, and the loss of those sales starting with the contract expiration this August follows losing $9 billion in annual sales to Express Scripts Inc. (NASDAQ: ESRX), which is already affecting this year’s sales numbers.</div><br/>
+      <div>Although Cardinal will no longer top $100 billion in revenue in 2014, its scale remains “enormous,” Barrett said, including 18,000 retail pharmacies, and thousands of hospitals and outpatient sites.</div><br/>
+      <div>Its generic drug business, which brings lower revenues but higher margins, will keep growing and won’t be affected at all by losing Walgreens, which was buying its generics direct from manufacturers anyway.</div><br/>
+      <div>Cardinal CFO Jeff Henderson also gave more detail on the company’s earlier announcement about the benefit to cash flow: A net gain of $500 million after taxes on fiscal 2014’s results, due to decrease in working capital for the contract and tax benefits.</div><br/>
+      <div>The company will be “disciplined” in deploying that, Henderson said, but expect continued dividend increases in line with earnings growth and $250 million worth of share repurchases over the next year.</div><br/>
+      <div class="gray-header">Published</div>
+      <div>May 02, 2013</div>
+      <div class="gray-header">Sources</div>
+      <div>Columbus Biz Insider</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a3-->
+<div data-role="page" id="a3">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        George S. Barrett (Cardinal Health) in "the Corner Office"
+    </div>
+    <div class="a-body">
+      <div>Adam Bryant conducts interviews of senior-level executives that appear in his “Corner Office” column each week in the SundayBusiness section of The New York Times. Here are a few insights provided during an interview of George S. Barrett, chairman and chief executive of Cardinal Health, a health care services company. To read the complete interview and the interviews of other executives.</div><br/>
+
+      <div><span class="speaker">Bryant:</span> What about leadership lessons in business?</div><br/>
+
+      <div><span class="speaker">Barrett:</span> I was running a company that was acquired by a bigger firm. I stayed with them after the acquisition, and then I got a call from the chairman and he said: “We’re having some issues with our flagship company.</div><br/>
+
+      <div>Would you be willing to come in and run it?” I was 34 years old, and I said to myself: “Well, it’s already struggling. How badly could I mess it up?” So I went there.</div><br/>
+
+      <div>Everyone on the management team was in their 50s, so the first day I was introduced to them, I thought they were going to collapse. You could sort of see them thinking, “That kid?”</div><br/>
+
+      <div>I realized I was going to have to win these guys over pretty quickly. I also knew that there were some folks in that group who were probably not going to come along for the ride. It was a turnaround, so I knew that I was going to have to move quickly to fix some things.</div><br/>
+
+      <div><span class="speaker">Bryant:</span> So how did you handle that transition?</div><br/>
+
+      <div><span class="speaker">Barrett:</span> I was very clear and direct about what I thought we were facing and what we needed to do about it, without blame. I had to create an environment in which people knew it was their job to tell me things that we needed to do because we were going to run out of time. I tend to be very direct. I expect people to be that way with me.</div><br/>
+
+      <div><span class="speaker">Bryant:</span> How did you assess the existing management team?</div><br/>
+
+      <div><span class="speaker">Barrett:</span> I concluded fairly quickly that not many of them would be staying. I’ll tell you one specific story. We were having some pretty significant compliance issues. So I spent some time looking through all this data and working with one executive who had responsibility for this key area.</div><br/>
+
+      <div>About three months into it, I sat him down, and I said, “Look, I think it’s probably time for us to part ways.” I said: “You haven’t disagreed with me once. You haven’t challenged me, nor have you really been comfortable bringing me bad news, and that’s what I need.”</div><br/>
+
+      <div>There were some very capable people there, but I just think the employees had lost confidence in them.</div><br/>
+
+      <div>That’s very hard to recover, because so much of leadership is about trust and belief. People have to believe in you. And when they stop believing in you, you can say all the things in the world, but it’s very, very hard to mobilize an organization when they’ve lost that belief.</div><br/>
+
+      <div><span class="speaker">Bryant:</span> How long did it take to size up whether someone was staying on the team?</div><br/>
+
+      <div><span class="speaker">Barrett:</span> It was about watching them, and watching the organization respond to them. I’ll give you an example. We’re sitting with a large group of folks, about 40 to 50 managers, and people are standing up to raise certain issues.</div><br/>
+
+      <div>And I watched this one executive. People were watching and riveted to him, really listening and engaged. And then this other executive spoke, and I watched him address the group, and I watched everyone’s eyes. And their eyes went back down to their tables. They couldn’t even meet eyes with him. It was a clear signal that said, “You’ve lost us.”</div><br/>
+
+      <div>So sometimes you don’t know what the messages are that you’re going to get, but you have to look for them.</div><br/>
+
+      <div>They come from your peripheral vision. And that was one of those cases where I just knew it the second it happened.</div><br/>
+      <div class="gray-header">Published</div>
+      <div>August 21, 2010</div>
+      <div class="gray-header">Sources</div>
+      <div>examiner.com</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a4-->
+<div data-role="page" id="a4">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        Team Insights? Just Use Your Peripheral Vision
+    </div>
+    <div class="a-body">
+      <div>This interview with George S. Barrett, chairman and chief executive of Cardinal Health, a health care services company, was conducted and condensed by Adam Bryant.</div><br/>
+
+      <div><span class="speaker">Q. Talk about some important leadership lessons for you.</span></div><br/>
+
+      <div class="answer">A. I had an injury going into my senior year of high school that required major surgery, and it caused me to miss my senior soccer season. Almost every college recruiter dropped off the map. Sports had been at the center of my life, and this was my first big setback. It was a real test of my resilience. I recovered and went on to play college soccer, but a reinjury during my junior season in college ended my athletic career.</div><br/>
+
+      <div class="answer">I was sort of bitter for a while, which is not really in my nature. I think I blamed my coach for a lot of things, when in fact this was really about me and my injury. I had to deal with it, and I had to move on.</div><br/>
+
+      <div class="answer">I came out of it with a different perspective, and I discovered that I had other talents that maybe I could dig more deeply into. I was able to explore my passion for music, which actually led me to pursue a professional music career for a while. So I found that there was another side of me.</div><br/>
+
+      <div><span class="speaker">Q. What about leadership lessons in business?</span></div><br/>
+
+      <div class="answer">A. I was running a company that was acquired by a bigger firm. I stayed with them after the acquisition, and then I got a call from the chairman and he said: “We’re having some issues with our flagship company. Would you be willing to come in and run it?” I was 34 years old, and I said to myself: “Well, it’s already struggling. How badly could I mess it up?” So I went there.</div><br/>
+
+      <div class="answer">Everyone on the management team was in their 50s, so the first day I was introduced to them, I thought they were going to collapse. You could sort of see them thinking, “That kid?”</div><br/>
+
+      <div class="answer">I realized I was going to have to win these guys over pretty quickly. I also knew that there were some folks in that group who were probably not going to come along for the ride. It was a turnaround, so I knew that I was going to have to move quickly to fix some things.</div><br/>
+
+      <div><span class="speaker">Q. So how did you handle that transition?</span></div><br/>
+
+      <div class="answer">A. I was very clear and direct about what I thought we were facing and what we needed to do about it, without blame. I had to create an environment in which people knew it was their job to tell me things that we needed to do because we were going to run out of time. I tend to be very direct. I expect people to be that way with me.</div><br/>
+
+      <div><span class="speaker">Q. How did you assess the existing management team?</span></div><br/>
+
+      <div class="answer">A. I concluded fairly quickly that not many of them would be staying. I’ll tell you one specific story. We were having some pretty significant compliance issues. So I spent some time looking through all this data and working with one executive who had responsibility for this key area.</div><br/>
+
+      <div class="answer">About three months into it, I sat him down, and I said, “Look, I think it’s probably time for us to part ways.” I said: “You haven’t disagreed with me once. You haven’t challenged me, nor have you really been comfortable bringing me bad news, and that’s what I need.”</div><br/>
+
+      <div class="answer">There were some very capable people there, but I just think the employees had lost confidence in them. That’s very hard to recover, because so much of leadership is about trust and belief. People have to believe in you. And when they stop believing in you, you can say all the things in the world, but it’s very, very hard to mobilize an organization when they’ve lost that belief.</div><br/>
+
+      <div><span class="speaker">Q. How long did it take to size up whether someone was staying on the team?</span></div><br/>
+
+      <div class="answer">A. It was about watching them, and watching the organization respond to them. I’ll give you an example. We’re sitting with a large group of folks, about 40 to 50 managers, and people are standing up to raise certain issues.</div><br/>
+
+      <div class="answer">And I watched this one executive. People were watching and riveted to him, really listening and engaged. And then this other executive spoke, and I watched him address the group, and I watched everyone’s eyes. And their eyes went back down to their tables. They couldn’t even meet eyes with him. It was a clear signal that said, “You’ve lost us.”</div><br/>
+
+      <div class="answer">So sometimes you don’t know what the messages are that you’re going to get, but you have to look for them. They come from your peripheral vision. And that was one of those cases where I just knew it the second it happened.</div><br/>
+
+      <div><span class="speaker">Q. Any surprises in the top job?</span></div><br/>
+
+      <div class="answer">A. I think later on in my career there were. As you take on leadership roles of larger organizations with higher profiles, there are things that come with that that you’re not always ready for — realizing that every word that you say means something. If you use the word “may” instead of “might,” people think, “Well, were you telling us something?” So there was this sudden awareness of the need to be clear and careful about every symbol.</div><br/>
+
+      <div class="answer">When you’re younger, and when you’re leading a smaller group or organization, it’s really more about the actions. You touch everything directly. You communicate with everybody directly. As you get into leading a bigger organization, you can’t touch everything directly, and so what you do carries symbolic weight. Often that’s the power of words, but sometimes it’s other things.</div><br/>
+
+      <div><span class="speaker">Q. Like what?</span></div><br/>
+
+      <div class="answer">A. Well, it’s often the little stuff. My days are jammed, like any other person who does what I do. It takes a lot of time for me to actually go over to the building where our cafeteria is and eat there, but I try to go there often just to see people. I get a chance to talk to people who actually are doing the work every day and that I rarely get to see.</div><br/>
+
+      <div class="answer">So little symbols like that matter. What do you spend your money on? When you first arrive into your position, do you spend a lot of money on new office furniture? These things seem trivial. Economically, they may not be important, but they are symbols.</div><br/>
+
+      <div><span class="speaker">Q. Talk about how you hire.</span></div><br/>
+
+      <div class="answer">A. By the time a person sees me, they’ve been screened for technical competence. So I’m really looking for fit. I think every organization has its own unique footprint and brand. Cardinal Health’s organization really values humility. They don’t want people coming in and telling them how to do things and showing off. They want folks who they really enjoy being around, who demonstrate a competence in a more modest and humble way. So you have to know your organization.</div><br/>
+
+      <div><span class="speaker">Q. What questions do you ask?</span></div><br/>
+
+      <div class="answer">A. I ask questions to try to get at a person’s nature. What are they really all about? Not just, what were their experiences, but how do they think? How do they operate? How do they lead? How do they interact? How do they deal with adversity? I try to look at how those pieces will fit together, and then I try to find someone I want to be around.</div><br/>
+
+      <div class="answer">You know, we work incredibly hard. It’s nice to be with people you want to work with. That doesn’t mean, by the way, you have to be going out to dinner every night or that they’re going to be your best friend. But it has to be someone you have a fundamental connection to in some way, and you trust them.</div><br/>
+
+      <div class="answer">I really encourage them to ask questions. What they’re curious about tells you a lot about who they are, and that’s sort of the most fun part of the interview for me. And it also tells you a little bit about what they’re interested in. It probably tells you how well they understand your company. And it tells you a little bit about their comfort with you. Are they really willing to ask a hard question?</div><br/>
+
+      <div><span class="speaker">Q. What would you say to a new senior executive you’ve just hired who asks, “What’s it like to work for you?”</span></div><br/>
+
+      <div class="answer">A. I’m going to trust you to do your work. I expect you to be unbelievably committed. That doesn’t mean that if you’ve got a kid who’s got a softball game at 3 p.m. you don’t run to it, because that’s really important. That’s a part of life.</div><br/>
+
+      <div class="answer">I also let them know that I’m very direct. You have to be comfortable with very direct feedback. I’m going to be very engaged. I’m going to probe and prod. It’s like a Socratic method with me. I’m going to continue to push on you. It’s part of the way I function. It’s part of the way I get information and I get understanding, and it’s also the way that you’ll share your thoughts with me.</div><br/>
+
+      <div class="answer">I count on you to set high goals, and I expect you to be incredibly direct with me. I’m not much of a micromanager, but if I am not confident we’re going the right direction I’ll be very engaged with you. I like to have fun in my work, and I expect it’s O.K. for you to do the same. And we work really hard, and we have a really good time together.</div><br/>
+
+      <div><span class="speaker">Q. What about career advice?</span></div><br/>
+
+      <div class="answer">A. Find the environment in which you thrive. You can put a great plant in the wrong soil and it’s not going to grow, and it’s true for all of us.</span></div><br/>
+
+      <div><span class="speaker">Q. What’s your philosophy of leadership?</span></div><br/>
+
+      <div class="answer">A. Articulating it in a single sound bite is hard for me, but I’d say this. I do think leadership is largely about trust, and trust has a couple of dimensions. It starts with competence. People have to believe that you really know what you’re doing. They have to really trust in your judgment because the data is so complex out there that they have to believe you can see through all the silliness and have some sense of the right course.</div><br/>
+
+      <div class="answer">People have to trust that you have a point of view about what this enterprise is going to look like. What do we seek to be? And they have to trust that you understand them, that you get them. Not necessarily that you know them personally, but you understand what it’s all about to work here and that you have their interests at heart. I think that when you can do those things, it can be a powerful combination.</div><br/>
+
+      <div class="answer">I think people sometimes equate leadership with charisma and decisiveness. I think those are powerful tools, and I hope I have both, but they’re not to be confused with leadership. I know a lot of very charismatic people who lack judgment and competence, and they’re not great leaders. They’re just fun to be around. And I know some very decisive people who lack judgment, which is terrifying.</div><br/>
+
+      <div class="answer">Also, I think a leader has to be comfortable with having the weight on their shoulders. And that’s not for everybody. It can be hard, and it’s a different experience if you haven’t had to experience this. That’s not for everybody, but I like it because I don’t feel like I’m alone. I wind up bringing the group together, and we own the weight. I love that part of it.</div><br/>
+
+      <div class="answer">I also believe that leadership is a two-way street. I tell my team, “I expect to learn from you as well as you’ll learn from me.”</div><br/>
+      <div class="gray-header">Published</div>
+      <div>August 14, 2010</div>
+      <div class="gray-header">Sources</div>
+      <div>New York Times</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a5-->
+<div data-role="page" id="a5">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        Statement of Chairman and CEO George Barrett Fortune 21 Cardinal Health Regarding Fiscal Cliff
+    </div>
+    <div class="a-body">
+      <div>DUBLIN, Ohio, Dec. 10, 2012 /PRNewswire/ -- The following statement can be attributed to George Barrett,</div><br/>
+
+      <div>Cardinal Health Chairman and CEO:</div><br/>
+
+      <div>"This is a critical time for our nation.  While last week's jobs data showed some encouraging signs, it is clear that consumer confidence remains fragile and the looming 'fiscal cliff' poses a serious threat to our economic recovery.  We strongly believe that our leaders in Washington must come together to resolve this issue.  We recognize that passions are strong and that perspectives vary, but it seems clear that getting our nation back on solid fiscal footing will require compromise on all sides.  We believe that any agreement should include increased revenues and serious steps to slow our spending on entitlements – necessary to ensure that our national safety net programs are sustainable for future generations.  Now is the time to act.  We urge our leaders to rise above political differences and act with speed."</div><br/>
+
+      <div>About Cardinal Health</div><br/>
+      <div>Headquartered in Dublin, Ohio, Cardinal Health, Inc. (NYSE: CAH) is a $108 billion health care services company that improves the cost-effectiveness of health care. As the business behind health care, Cardinal Health helps pharmacies, hospitals, ambulatory surgery centers and physician offices focus on patient care while  reducing costs, enhancing efficiency and improving quality. Cardinal Health is an essential link in the health care supply chain, providing pharmaceuticals and medical products to more than 60,000 locations each day. The company is also a leading manufacturer of medical and surgical products, including gloves, surgical apparel and fluid management products. In addition, the company supports the growing diagnostic industry by supplying medical products to clinical laboratories and operating the nation's largest network of radiopharmacies that dispense products to aid in the early diagnosis and treatment of disease. Ranked #21 on the Fortune 500, Cardinal Health employs more than 30,000 people worldwide. More information about the company may be found at cardinalhealth.com and @CardinalHealth on Twitter.</div><br/>
+      <div class="gray-header">Published</div>
+      <div>Dec 10, 2012</div>
+      <div class="gray-header">Sources</div>
+      <div>Cardinal Health</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a6-->
+<div data-role="page" id="a6">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        Shattering the Ceiling
+    </div>
+    <div class="a-body">
+      <div>Local business leaders have an ambitious plan to help more women climb the corporate ladder. Supporters want to get the entire community on board to Widen the Circle and put more female execs in leadership roles.</div><br/>
+
+      <div>Cynics often contend that Washington is the place where good ideas go to die. But for George Barrett, chairman and CEO of Cardinal Health, a trip to the nation’s capital provided a spark of inspiration for how Central Ohio organizations could elevate more women into corporate leadership roles.</div><br/>
+
+      <div>Barrett was in Washington, D.C., for a meeting of the Wall Street Journal CEO Council. A session on women in business featured actress Geena Davis, who founded the Geena Davis Institute on Gender in Media in 2004. “She was fantastic,” Barrett says. “She was incredibly fluent in the subject and quite passionate.”</div><br/>
+
+      <div>If Davis could inspire the CEOs of some of the world’s leading companies, why not folks in Central Ohio? “I just thought it would be an interesting conversation with us at Cardinal Health,” Barrett says.</div><br/>
+
+      <div>At a subsequent meeting of the Columbus Partnership, a thought struck him. “For a city which is, as you know, known for its openness, we look surprisingly gender imbalanced,” Barrett says. So he pitched the topic to the Partnership’s executive committee as a broader community issue.</div><br/>
+
+      <div>Barrett says Central Ohio has numerous business advantages. “It’s a place where you can make things happen,” he says. As community leaders, it seemed logical for Partnership members to talk about whether they are getting the kinds of talent they need and whether women are moving to the top spots.</div><br/>
+
+      <div>Steve Lyons, vice president of member services and community engagement for the Columbus Partnership, says committee members immediately embraced the idea. “It was a resounding yes,” he says.</div><br/>
+
+      <div>The Widen the Circle initiative kicked off with an invitation-only event Oct. 1 at Ohio State University. Davis delivered the keynote address and participated in a panel discussion.</div><br/>
+
+      <div>Now, the hard part has begun. The Partnership’s HR Council is gathering data about local women in leadership, including percentages of women in the workforce as well as in management, senior leadership and executive roles. The results will be used to compile a set of best practices to be shared with the entire business community. The initial call went out in January, Lyons says. The group aims to have ideas compiled by the end of the first quarter.</div><br/>
+
+      <div>“From there, our challenge—our next step—is to convene a broader community dialogue that takes Widen the Circle to Widen the Circle 2.0,” Lyons says.</div><br/>
+
+      <div>Carole Watkins, chief human resources officer for Cardinal Health and an HR Council member, says the group aims to develop a menu of options so local organizations can adopt their own related initiatives. The company aims to host a session on sharing best practices in the spring.</div><br/>
+
+      <div>The HR Council (which also addresses issues such as creating a sustainable talent pipeline for the region; local, state and federal policy implications; leveraging and engaging students; and marketing and branding) has 15 members: American Electric Power, Battelle, Big Lots, Cardinal Health, The Dispatch Printing Company (parent of Columbus C.E.O.), DSW, Express, Greif, Huntington Bancshares, Limited Brands, Nationwide, OhioHealth, Ohio State University, ScottsMiracle-Gro and Squire Sanders.</div><br/>
+
+      <div>Lyons says tackling issues such as work-life balance, flexible schedules and even communicating the importance of having women on boards of directors—so that every level of an organization is engaged in the effort—are steps companies of all sizes can take to Widen the Circle. He also would like to see more collaborative opportunities to keep the conversation moving forward, whether it takes the form of leadership programming that talks about mentoring or even speakers’ bureau events.</div><br/>
+
+      <div>“When you talk about women in leadership, it’s not always a one-size-fits-all,” Lyons says. “Also, I think it’s important to continue to engage the male perspective. … I think it’s important that both men and women gain a more thorough understanding.”</div><br/>
+
+      <div>Keith Sanders, senior executive vice president and human resources director at Huntington and a member of the Partnership’s HR Council, agrees. “It’s really important that men understand the importance of engaging all their employees,” he says.</div><br/>
+
+      <div><span class="speaker">Building Support<span></div><br/>
+
+      <div>Using the Partnership’s backing to launch such an undertaking is a logical starting point, given that its members include 50 of the most respected and influential organizations in the region.</div><br/>
+
+      <div>The Partnership, which has consciously grown its ranks under the leadership of President and CEO Alex Fischer, has increased the number of women at its own table to six. Still, there’s always room for improvement.</div><br/>
+
+      <div>According to the Institute on Women, a Columbus-based nonprofit research organization, Ohio has had only two women serving as CEOs of Fortune 1000 companies: Kerrii Anderson, formerly at Dublin-based Wendy’s International, and Beth Mooney at KeyCorp. in Cleveland.</div><br/>
+
+      <div>The 2012 Central Ohio Leadership Census (compiled by the institute, Otterbein University and the local chapter of Women for Economic and Leadership Development) states that 8 percent of the 48 largest private companies in Ohio have female CEOs. Of the 28 public companies in Central Ohio, none have female CEOS and 36 percent have no women on their boards.</div><br/>
+
+      <div>Nationally, according to a March report from nonprofit research organization Catalyst, women make up 46.9 percent of the U.S. labor force, but hold only 4.2 percent of CEO jobs at Fortune 500 companies and 16.6 percent of board seats at those organizations.</div><br/>
+
+      <div>At Cardinal Health, the largest public company in Ohio and No. 21 on the 2012 Fortune 500, Widen the Circle was a logical extension of several existing efforts, including the Women’s Initiative Network, which focuses on ways to make the company a good place for women to grow their careers. The company also is trying to boost the number of women pharmacists through its Women in Pharmacy Initiative. More than half of pharmacy school graduates are women, Barrett says, but the percentage of women who are pharmacy owners is in the teens.</div><br/>
+
+      <div>Cardinal Health has won its share of accolades for women in the workplace, including recent rankings among the 2012 Working Mother 100 Best Companies and the 2013 NAFE Top 50 Companies for Executive Women, bestowed by the National Association for Female Executives. According to the NAFE data, women make up 44 percent of Cardinal Health’s 22,651-person U.S. workforce, 31 percent of its senior managers and 22 percent of corporate executives. According to the company’s website, five of the top 21 executives are women, and three women sit on its 12-member board of directors.</div><br/>
+
+      <div>Columbus, too, is getting noticed as a good place for career women. The city landed the No. 8 spot on Forbes’ list of The 15 Best Cities for Female Entrepreneurs and was ranked No. 1 on the magazine’s The Best Cities for Working Mothers 2012.</div><br/>
+
+      <div><span class="speaker">Measuring Success</span></div><br/>
+
+      <div>Sanders says Widen the Circle gives employers as well as the community an opportunity to acknowledge support for women leaders, and to “focus on not only the accomplishments of women, but also give women aspirational people to look to.”</div><br/>
+
+      <div>Watkins says the concept of sponsorship, rather than mentorship, can help move women up the career ladder. Coaches, she says, talk to you. Mentors talk with you. Sponsors talk about you.</div><br/>
+
+      <div>Sanders says the bank strives to empower and advance not only women (it has women’s business resource groups in Columbus and several other markets), but all employees. “At Huntington, we focus on inclusion,” he says. The goal: making sure all associates feel included and treated with respect, regardless of gender, ethnicity, sexual orientation and the like. “We want to create an environment where differences are valued,” Sanders says. “When we do that, we create business value and we create a competitive advantage.”</div><br/>
+
+      <div>According to its website, three of Huntington’s top 12 executive officers are women. The company also has two female regional presidents and two women on its board of directors. Overall, Sanders says, 63 percent of Huntington employees are women—significantly better than the DiversityInc. Top 50 national average of 47 percent. “We’re very proud of our efforts,” he says.</div><br/>
+
+      <div>Barrett says Cardinal Health, too, regularly talks about diversity—at both the executive and board levels. “Diversity is a very loaded subject,” he says. To some, it’s about rights; to others, it’s about quotas. “To me, I try to think of it in the context of inclusion.</div><br/>
+
+      <div>“We want it to be an environment where we are great because we have great people that look and think differently,” Barrett says.</div><br/>
+
+      <div>The company’s Voice of the Employee survey has an inclusion index, which has been rising for the last three years, Barrett says: “Our board cares about this.”</div><br/>
+
+      <div>Ultimately, it will fall to many organizations’ HR departments to track and try to improve the percentage of women in leadership roles. Already, the Widen the Circle initiative has gained buzz and companies want to get on board. “Other people in the community are hearing about it and they’re calling me,” Watkins says.</div><br/>
+
+      <div>Getting buy-in from those in the C-suite and at the board level is critical to success, Lyons says. Sanders agrees. “It all starts with leadership at the top. The leadership team has to have a firm commitment,” he says.</div><br/>
+
+      <div>Sanders advises midsize and smaller organizations to focus on succession planning, looking at the women who are in place now and evaluating recruiting efforts to build a “pipeline of talent.” That could be as simple as having an internal referral process, he says. “The key is succession planning and talent identification.”</div><br/>
+
+      <div>Those involved in Widen the Circle certainly hope to see improved metrics of women in leadership as the initiative continues. “But I think more important, the measure is the organizational health of companies that are involved in this effort,” Sanders says.</div><br/>
+
+      <div>“We would like to be recognized as the No. 1 place in the country for women to grow their careers,” Lyons says.</div><br/>
+      <div class="gray-header">Published</div>
+      <div>From the April 2013 issue of Columbus CEO</div>
+      <div class="gray-header">Sources</div>
+      <div>Julanne Hohbach</div><div>Columbus C.E.O</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a7-->
+<div data-role="page" id="a7">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        Cardinal Health's CEO uses background to think outside the box
+    </div>
+    <div class="a-body">
+      <div>When most people listen to an orchestra, they hear the violins playing the melody.</div><br/>
+
+      <div>Not George Barrett, CEO of Cardinal Health.</div><br/>
+
+      <div>“When musicians listen to a piece of music, they hear the inner lines, they hear the viola supporting the harmony, the countermelody in an oboe,” said Barrett, 58, who gave up a promising future as a singer to pursue a career in the pharmaceutical business.</div><br/>
+
+      <div>“If you only hear the obvious, you’re often missing something quite important,” he said. “You have to read between the lines and figure out what is the story behind the story.”</div><br/>
+
+      <div>These musical lessons in listening are something that Barrett — who still plays the guitar and piano and sings — never forgot as he climbed the corporate ladder of the pharmaceutical industry until he took over at Cardinal Health, the Dublin-based pharmaceutical-distribution and medical-supply company with annual revenue of more than $100 billion.</div><br/>
+
+      <div>Barrett combines the competitiveness he acquired as a star athlete with the out-of-the-box thinking he learned through music and is drawn to “people who are not only competitive and have that raw horsepower, but have the ability to imagine and draw connections.”</div><br/>
+
+      <div>This type of thinking has come in handy at Cardinal.</div><br/>
+
+      <div>Barrett took over as CEO in 2009 and has led the company in several new directions, pushing and pulling Cardinal beyond its core business of bulk drug distribution and further into medical supplies, diagnostic technology and home health care, and around the world to China.</div><br/>
+
+      <div>Ups and downs along the way include the loss of a $22 billion-a-year contract with Walgreen Co. in March, and the renewal of a $23 billion annual contract with CVS Caremark Corp. in late April.</div><br/>
+
+      <div>Cardinal is Ohio’s largest company in terms of revenue, but because it’s a distributor and doesn’t sell directly to customers, it’s not well known to the public. Neither is its CEO, despite his interesting and unconventional past.</div><br/>
+
+      <div>“George is very engaged with people; he’s a real Pied Piper,” said Robert Walter, the founder of Cardinal Health. “And it’s genuine; people will follow George because they can see he likes people and has a good leadership style.”</div><br/>
+
+      <div>Barrett is, however, well-known to mayors and even presidents. He and other business leaders met recently with President Barrack Obama to discuss the hot-button topic of immigration reform.</div><br/>
+
+      <div>“You can’t help but be mesmerized when you’re there,” he said of the meeting in the White House. “It’s goose bumps ... but you try not to show that when you’re there.”</div><br/>
+
+      <div>Barrett is a member of the commission that Mayor Michael B. Coleman put together to recommend reforms for the city’s schools.</div><br/>
+
+      <div>“The thing I noticed about George is he is constantly engaging the other person and listening and understanding,” said Alex Fischer, CEO of Columbus Partnership, a coalition of local CEOs that includes Barrett.</div><br/>
+
+      <div><span class="speaker">The Barrett background<span></div><br/>
+      <div>Before music and business, sports were Barrett’s passion and potential career path.</div><br/>
+
+      <div>He was the captain of the soccer, basketball and baseball teams at Staples High School in Westport, Conn.</div><br/>
+
+      <div>His parents, Lucille and Herbert, were teachers, poets and musicians who taught their five children many life lessons.</div><br/>
+
+      <div>“I learned respect for other people from my parents,” Barrett said. “They understood and accepted people for the gifts they had, they were colorblind, status-blind, and if someone is in trouble, you open your arms and catch them.”</div><br/>
+
+      <div>At the Ivy League’s Brown University in Providence, R.I., Barrett quickly became a star on the soccer team, and his dream was to play professionally.</div><br/>
+
+      <div>“I could see he was eager for life,” said David Josephson, a music professor at Brown who became Barrett’s mentor. “If there was an adventure to have, George owned it.”</div><br/>
+
+      <div>A serious back injury, and subsequent surgery, ended his soccer career.</div><br/>
+
+      <div>“I’ve had seven operations,” Barrett said, and then ticked off the body parts: back (four times), knee, elbow and shoulder. “When I fill out the form in the doctor’s office, I have to ask for another piece of paper.”</div><br/>
+
+      <div>Despite all these operations, Barrett swims, plays tennis and rides a bike, and is one of those annoyingly fit people who actually weighs less than he did in college.</div><br/>
+
+      <div>After he was forced to give up soccer, Barrett threw himself into singing.</div><br/>
+
+      <div>Josephson recruited him to sing in the school’s choirs and musical productions, and convinced his protege to add a music major to his degree in history.</div><br/>
+
+      <div>“I hadn’t heard a voice like that in years,” Josephson said, adding that Barrett’s tenor voice was pitch perfect.</div><br/>
+
+      <div>A voice coach who worked with the Metropolitan Opera recruited Barrett to go to Manhattan and study opera. “I didn’t really want to be an opera singer,” he said. “I went because — well, how do you not if you’re invited?”</div><br/>
+
+      <div>Barrett did a few studio gigs, including some commercial jingles. He started writing his own songs and performed at some of the famous clubs in Greenwich Village, including the Bitter End and Folk City. A Los Angeles talent agency wanted to sign Barrett and turn him into a recording star.</div><br/>
+
+      <div>During this period, he had met and started dating Debbie Neimeth, whom he would eventually marry.</div><br/>
+
+      <div>“I loved music, but I didn’t like the life of a musician,” Barrett said. “I wanted to sleep at night and be awake during the day; I didn’t like the self-promotion required. I just felt in the pit of my stomach this wasn’t the life I wanted.”</div><br/>
+
+      <div><span class="speaker">Pharmaceutical leader<span></div><br/>
+      <div>Barrett is now considered one of the leaders and leading thinkers of the pharmaceutical industry.</div><br/>
+
+      <div>“He’s certainly helped reinvigorate a company that, when he joined them, didn’t have a great morale,” said Ross Muken, an analyst with ISI Group who covers Cardinal closely.</div><br/>
+
+      <div>None of this would have come about if Barrett had followed his post-singing plan to attend law school.</div><br/>
+
+      <div>His future father-in-law, Dick Neimeth, asked him why he was going to law school “and I didn’t have an answer,” Barrett said. “He said, ‘Have you ever considered business?’ ”</div><br/>
+
+      <div>Dick Neimeth was in the pharmaceutical business and, along, with other investors, was set to launch a company, NMC Laboratories, which would focus on dermatologicals.</div><br/>
+
+      <div>The company hired Barrett, who worked his way up the ladder while taking classes in the evening to earn an MBA at New York University. He eventually became CEO of NMC, which was later bought by A.L. Laboratories. Barrett landed a position with medical-products company Teva North America and was later named CEO.</div><br/>
+
+      <div>If Dick Neimeth had been a banker, would Barrett instead be the CEO of a bank?</div><br/>
+
+      <div>“I have no idea; it’s one of those strange things,” he said. “It was complete serendipity.”</div><br/>
+
+      <div>Barrett joined Cardinal in January 2008 as vice chairman and CEO of the health-care supply chain services division. He became CEO in August 2009, replacing R. Kerry Clark.</div><br/>
+
+      <div><span class="speaker">Building Cardinal<span></div><br/>
+      <div>Hiring Barrett was an obvious choice, said Walter, who is still a major Cardinal shareholder.</div><br/>
+
+      <div>“He’s extremely knowledgeable about the pharmaceutical industry and more broadly about health care,” he said. “And he loves the business.”</div><br/>
+
+      <div>A strong CEO was needed, said Adam Fein, president of Pembroke Consulting. In October 2008, Cardinal reached a</div><br/>
+
+      <div>$34 million settlement of charges that it had failed to notify the federal Drug Enforcement Administration about suspicious shipments of drugs to pharmacies that later sold them illegally online.</div><br/>
+
+      <div>“They lost an enormous amount of market share and credibility, especially with the smaller pharmacies,” Fein said.</div><br/>
+
+      <div>Under Barrett’s leadership, Cardinal has expanded its operations beyond the high-volume, low-profit business of distributing drugs to the major pharmacy chains and into more-profitable segments of health care.</div><br/>
+
+      <div>“It wasn’t a classic turnaround, meaning Cardinal wasn’t losing money,” Barrett said. “But we were losing some of our positioning, and I felt like I could do something about that. We were just missing a few turns in the road.”</div><br/>
+
+      <div>And the key to finding the right path is to “be able to imagine what it could look like, and then say, ‘What does it take to get there?’  ” he said.</div><br/>
+
+      <div>To get there, Cardinal has become a more-important player in the distribution of lower-cost, higher-profit generic drugs and has increased the number of independent pharmacies it services to 7,800 from 3,800 four years ago.</div><br/>
+
+      <div>Cardinal also has enhanced its efforts in the specialty- and ambulatory-care markets; recently acquired home health-care provider AssuraMed for $2.1 billion; and increased its activity in China through the acquisition of several drug-distribution companies.</div><br/>
+
+      <div>The loss of the Walgreen contract was an inevitable setback, Barrett said.</div><br/>
+
+      <div>The new deal calls for Walgreen to buy as much as 23 percent of the stock of AmerisourceBergen, the drug distributor — and Cardinal competitor — that won the pricey contract.</div><br/>
+
+      <div>“In my opinion, Cardinal wasn’t willing to sell a significant part of the company to a customer,” Walter said, adding that Barrett prepared the board for the loss of the contract. “I’d say George enjoys an incredible amount of confidence from the board, which he should.”</div><br/>
+
+      <div>Barrett refused to go into details about the Walgreen contract.</div><br/>
+
+      <div>“You have to create value for each other and be aligned, and that wasn’t going to happen in this case,” he said.</div><br/>
+
+      <div>Fein believes the loss of the Walgreen contract will result in significant job losses, and that Cardinal needs to bulk up its market share in the specialty-medicine segment, including oncology drugs.</div><br/>
+
+      <div>“My view is there will be some short-term pain as Cardinal restructures and resizes, but they will emerge a stronger company,” he said. “George is well-respected, someone with a clear vision who has righted the ship at Cardinal.”</div><br/>
+      <div class="gray-header">Published</div>
+      <div>May 19, 2013</div>
+      <div class="gray-header">Sources</div>
+      <div>Steve Wartenberg</div><div>The Columbus Dispatch</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a8-->
+<div data-role="page" id="a8">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        Cardinal Health Is Buying Large Medical Supplier for $2 Billion
+    </div>
+    <div class="a-body">
+      <div>Cardinal Health, the second-largest distributor of prescription drugs, announced on Thursday that it was buying a large medical supplier in a $2 billion deal aimed at expanding the business into the growing area of home health care.</div><br/>
+
+      <div>The medical supplier, the privately held AssuraMed, supplies products for home use to aid treatment of diabetes, wounds, incontinence and other conditions. It had revenue of $1 billion in 2012, Cardinal Health said.</div><br/>
+
+      <div>AssuraMed, which has been owned by the private equity firms Clayton, Dubilier & Rice and Goldman Sachs’s GS Capital Partners, serves more than one million patients nationwide and sells more than 30,000 products.</div><br/>
+      <div>In an interview, George S. Barrett, Cardinal’s chairman and chief executive, said the acquisition was aimed at taking advantage of a confluence of national trends: the aging population, which has led to an increase in patients with chronic conditions, and more treatment of those conditions at home or in nonhospital settings like doctors’ offices and outpatient clinics.</div><br/>
+
+      <div>“One of the things that has become clear is we’re going to have to manage patients differently,” Mr. Barrett said. “It very strategically aligns with where we think health care is moving, and it’s a natural extension of our skill set.”</div><br/>
+
+      <div>In a conference call with investors, Mr. Barrett said the home health care area was growing at about 7 percent annually and represented a market opportunity of about $16 billion.</div><br/>
+
+      <div>The deal is expected to close in April and will be financed with a combination of $1.3 billion in senior unsecured notes and cash. Cardinal estimated the acquisition would add 2 to 3 cents to its earnings a share in 2013, and 18 cents a share by 2014.</div><br/>
+
+      <div>Cardinal, based in Dublin, Ohio, had revenue of $108 billion in 2012, and ranks second in the drug-distribution market behind the McKesson Corporation, based in San Francisco. AssuraMed is based in Twinsburg, Ohio.</div><br/>
+
+      <div>Shares in Cardinal closed up 56 cents, or 1.2 percent, at $46 on Thursday.</div><br/>
+
+      <div>Cardinal was advised by Bank of America Merrill Lynch and the law firm Wachtell, Lipton, Rosen & Katz. Clayton Dubilier and GS Capital were advised by JPMorgan Chase, Goldman Sachs and the law firm Debevoise & Plimpton.</div><br/>
+      <div class="gray-header">Published</div>
+      <div>Feb 14, 2013</div>
+      <div class="gray-header">Sources</div>
+      <div>Katie Thomas</div><div>dealbook.nytimes.com</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a9-->
+<div data-role="page" id="a9">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        Profile: George Barrett ’73, CEO of Cardinal Health
+    </div>
+    <div class="a-body">
+      <img class="a-img" src="img/george-barrett2.jpg"/>
+      <div>George Barrett ’73 — who captained Staples’ soccer, basketball and baseball teams, played soccer at Brown University and is now CEO of Cardinal Health, the Fortune 25 company with revenues of more than $100 billion — is the subject of a long story in today’s Columbus Dispatch.</div><br/>
+      <div>The piece says George — who still plays guitar and piano, and sings — “combines the competitiveness he acquired as a star athlete with the out-of-the-box thinking he learned through music.”</div><br/>
+
+      <div>Though Cardinal is Ohio’s largest company in terms of revenue, because it’s a distributor and does not sell directly to customers, it’s not well known. “Neither is its CEO, despite his interesting and unconventional past,” the Dispatch says.</div><br/>
+      <div>George is a major player in business circles, however. He met recently with President Obama to discuss immigration reform.</div><br/>
+
+      <div>His mother, Lucille, was a long-time English teacher. His father, Herb, was a psychologist.</div><br/>
+
+      <div>“I learned respect for other people from my parents,” Barrett said. “They
+      understood and accepted people for the gifts they had, they were colorblind, status-blind, and if someone is in trouble, you open your arms and catch them.”</div><br/>
+
+      <div>A serious back injury, and subsequent surgery, ended George’s soccer career.</div><br/>
+      <div>Despite 7 operations he still swims, plays tennis and rides a bike.</div><br/>
+
+      <div>After being forced to give up soccer at Brown, George added a music major to his degree in history. His former mentor said he has perfect pitch.</div><br/>
+
+      <div>After college he was recruited by the Metropolitan Opera to study opera. He was more interested in writing his own songs, and performed at Greenwich Village clubs like the Bitter End and Folk City. He said:</div><br/>
+
+      <div>“I loved music, but I didn’t like the life of a musician. I wanted to sleep at night and be awake during the day; I didn’t like the self-promotion required. I just felt in the pit of my stomach this wasn’t the life I wanted.”</div><br/>
+
+      <div>After teaching and coaching soccer at Horace Mann, and considering law school, George entered the business world. Along the way, he earned an MBA at New York University.</div><br/>
+
+      <div>According to the Dispatch,  he is “now considered one of the leaders and leading thinkers of the pharmaceutical industry.”</div><br/>
+
+      <div class="gray-header">Published</div>
+      <div>May 26, 2013</div><br/>
+
+      <div class="d-title" style="margin-left:0px">George Barrett ’73 Profiled In Barron’s</div><br/>
+      <img class="a-img" src="img/george-barrett2.jpg"/>
+      <div>George Barrett ’73 — the former Staples and Brown University star — was the subject of a recent “CEO Spotlight” in Barron’s, the prestigious financial magazine.</div><br/>
+
+      <div>While much of the long story focused on George’s success as CEO of Cardinal Health — a Fortune 25 healthcare company — a substantial section was devoted to his intriguing background.</div><br/>
+
+      <div>Here’s an excerpt:</div><br/>
+
+      <div>Energetic and fit, Barrett sat down with Barron’s in a conference room at the company’s Dublin, Ohio, headquarters over a lunch of green salad. No sodas, and no sweets for dessert. And that was no accident. While Cardinal’s business is built around treating diseases with increasingly low-cost medicines, Barrett knows the real key to cutting health-care spending is to treat the problem before it becomes a problem: “The starting point is the really devastating effect of obesity and smoking on public health.”</div><br/>
+
+      <div>Barrett practices what he preaches. Cardinal offers its roughly 32,000 employees programs on weight loss, nutrition, stress management, diabetes, heart health, and stress management, in addition to discounted fitness-club memberships….</div><br/>
+
+      <div>The CEO of the country’s second-largest drug distributor— McKesson (MCK) is marginally bigger—is neither a doctor nor an engineer. Barrett, in fact, earned an undergraduate degree in music and history from Brown University in 1977. And after an audition, he was invited to study with a voice coach who worked with New York’s Metropolitan Opera.</div><br/>
+
+      <div>Barrett’s predisposition to the arts—he’s also an accomplished pianist, guitarist, and French-horn player—comes naturally. His mother is a published poet and former teacher and his father was a psychologist. Nobody in his family worked in business, so it was never really on his radar screen.</div><br/>
+
+      <div>A varsity soccer player at Brown, he followed his passions after college, teaching and coaching at two of New York’s private schools by day while pursuing a music career at night. Soon, he started landing folk-rock gigs around town—but something seemed to be missing.</div><br/>
+
+      <div>“I realized, about two and a half years into this, that while I loved being onstage and I loved being in the recording studio and I loved the music, everything else about the business I didn’t like,” he says. “I didn’t like turning day into night, night into day.” Nor did he care for the pay—it didn’t cover his rent.</div><br/>
+
+      <div>It was then that his fiance’s father steered him into business, working for a small dermatology-related firm.</div><br/>
+
+      <div>“I really enjoyed the variety of it and how fast I was getting a chance to learn,” Barrett says, recalling that he moved between regulatory affairs, sales, and manufacturing, among other responsibilities. Eight years later, after earning an M.B.A. from New York University in his spare time, he was running the firm.</div><br/>
+
+      <div class="gray-header">Published</div>
+      <div>June 22, 2012</div><br/>
+
+      <div class="d-title" style="margin-left:0px">George Barrett ’73 Profiled In NY Times</div><br/>
+      <img class="a-img" src="img/george-barrett1.jpg"/>
+      <div>George Barrett ’73 — chairman and CEO of Cardinal Health, a Fortune 100 company — is the subject of today’s “Corner Office” interview in the New York Times Sunday Business section.</div><br/>
+
+      <div>And the 1st thing he talks about is Staples soccer.</div><br/>
+
+      <div>Asked to describe “some important leadership lessons,” the former Staples and  Brown University star says:</div><br/>
+
+      <div class="answer">I had an injury going into my senior year of high school that required major surgery, and it caused me to miss my senior soccer season.  Almost every college recruiter dropped off the map.  Sports had been at the center of my life, and this was my first big setback. It was a real test of my resilience.  I recovered and went on to play college soccer, but a reinjury during my junior season in college ended my athletic career.</div><br/>
+
+      <div class="answer">I was sort of bitter for a while, which is not really in my nature.  I think I blamed my coach for a lot of things, when in fact this was really about me and my injury.  I had to deal with it, and I had to move on.</div><br/>
+
+      <div class="answer">I came out of it with a different perspective, and I discovered that I had other talents that maybe I could dig more deeply into.  I was able to explore my passion for music, which actually led me to pursue a professional music career for a while.  So I found that there was another side of me.</div><br/>
+
+      <div>George has had a varied career.  He has also served as CEO of Teva North America, but also taught and coached soccer at Horace Mann School in New York.</div><br/>
+
+      <div>George earned his MBA at New York University.  He is a member of the board of visitors at the Owen School of Business at Vanderbilt University, and Project Restore at John Hopkins School of Medicine.</div><br/>
+      <div class="gray-header">Published</div>
+      <div>Aug 15, 2010</div>
+
+      <div class="gray-header">Sources</div>
+      <div>staplessoccer.wordpress.com</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a11-->
+<div data-role="page" id="a11">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        Cardinal CEO George Barrett: ‘Navigating’ amid health-care storm
+    </div>
+    <div class="a-body">
+      <img class="a-img" src="img/george-barrett3.jpg"/>
+      <div>George Barrett’s employees call him by his first name as he walks the halls of Cardinal Health’s Dublin headquarters. The CEO’s energy and enthusiasm are contagious among what appears to be a very motivated workforce.</div><br/>
+
+      <div>“Our people are really energized by that notion of being critical to the health-care system,” says Barrett, who projects an aura that’s at once shrewd and warmly engaging as he pops into and out of Cardinal’s boardrooms.</div><br/>
+
+      <div>Barrett’s gift is his ability to stay plugged into the global health-care ecosystem while maintaining a connection with the more than 30,000 employees in his organization.</div><br/>
+
+      <div>Ranked No. 19 on the Fortune 500 list, Cardinal Health reported $101.1 billion in revenue in fiscal year 2013. The company serves 1 million patients through its products and services, which are distributed through approximately 18,000 retail and independent pharmacies and 85 percent of hospitals in the United States.</div><br/>
+
+      <div>Because of Barrett’s accomplishments, his peers have recognized him as the Large For-Profit CEO of the Year for 2013. He was recognized, along with five more executive honorees, at the CEO of the Year reception and awards ceremony held by Columbus CEO at the Statehouse on Thursday.</div><br/>
+
+      <div class="speaker">Q: What is the mission of Cardinal Health?</div><br/>
+
+      <div class="answer">A: For many years, we’ve been behind the scenes as a health-services company that enables the system to function efficiently.</div><br/>
+
+      <div class="answer">That’s begun to evolve a little bit more through some recent moves where we’ve become more involved in actual patient care. We’ve got a group that does clinical pharmacy work. … We’ve acquired (a business) that provides products and services to the home, and we’ve started to shift a bit from just being a B2B business to being a business that actually touches consumers — but very much this is about our tagline, which is being “essential to care.”</div><br/>
+
+      <div class="speaker">Q: Does Cardinal have a voice in national health policy?</div><br/>
+
+      <div class="answer">A: We’re a fairly good-sized company. That, I guess, in some ways affords us, that alone, a voice.</div><br/>
+
+      <div class="answer">I’ve been around health care for 30 years in different parts of the health-care system, so I’ve been very active on health-policy issues. I do the best I can to be constructive to help us as a country think about how best to navigate this interesting challenge. … Regardless of exactly how the health-care bill rolls out, we can’t escape the powerful forces. We can’t escape demographics. We can’t escape the fact that we’ve got health issues as a country.</div><br/>
+
+      <div class="answer">Our work is going to be very important in terms of how we help the system navigate that, with the tools we can bring to help deliver care to a large population and deliver care in an affordable way. That’s at the heart of our proposition. I think that’s what motivates our people.</div><br/>
+
+      <div class="speaker">Q: What Cardinal Health accomplishments are your proudest of?</div><br/>
+
+      <div class="answer">A: We did some tremendous work in repositioning our business to diversify our customer base, to diversify the sets of products and services that we provide and to make sure that we are increasingly relevant. I think that’s the critical issue.</div><br/>
+
+      <div class="answer">It’s very easy for a company — or any institution — to become very good at something that becomes irrelevant. You have to be able to recognize change in front of you. So we’ve really challenged the organization to say, “We are going to be relevant to this health-care system, no matter how fast it changes.”</div><br/>
+
+      <div class="answer">One of the great challenges for any organization is staying nimble enough and adaptive enough to adjust to those changes. I’m very proud of the work that our people have done.</div><br/>
+
+      <div class="speaker">Q: How would you describe your leadership style?</div><br/>
+
+      <div class="answer">A: I tend to try to move relatively fluently between the big strategic issues of the moment and having to execute on a very tough business that’s really about the here and now and needs to deliver every day with a million moving parts.</div><br/>
+
+      <div class="answer">We’ve got tens of thousands of customers that we’re serving every day, so we don’t have the luxury of just contemplating the future. We have to be able to compete in the here and now, and we have to be able to anticipate the future, both. Part of my style is to encourage all of our team to do both of those things.</div><br/>
+      <div class="gray-header">Published</div>
+      <div>Nov 17, 2013</div>
+      <div class="gray-header">Sources</div>
+      <div>Kitty McConnell</div><div>Columbus C.E.O</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Tweets -->
+<div data-role="page" id="videos">
+    <div class="page-title">
+        <span class="title" style="margin-left:13%">Tweets</span>
+        <a class="right" href='javascript:getTweets();'>
+            <img src="img/refresh.png" style="width:25px"/>
+        </a>
+    </div>
+    <div id="tweetList" class="list">
+        
+    </div>
+    <div id="loader" style="visibility:hidden">
+        <img src="css/images/ajax-loader.gif" style="display: block;margin-left: auto; margin-right: auto;">
+    </div>
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('[data-position=fixed]').fixedtoolbar({ tapToggle:false});
+    var totalEl = 0;
+
+    currentVideoId = "";
+    function playSelectedVideo(id){
+        currentVideoId = id;
+        var video = document.getElementById(id);
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+
+    function stopCurrentVideo() {
+        var video = document.getElementById(currentVideoId);
+        video.pause();
+    }
+
+    function getTweets() {
+        $("#tweetList").html("");
+        $("#loader").css("visibility","visible");
+        var twitterAPI = "http://54.215.134.149:8080/data/getdata?type=SearchTweets&q='GeneralElectric'";
+        $.getJSON( twitterAPI, {
+            format: "json"
+        }).done(function( data ) {
+            var tweets = JSON.parse(data.Error);
+            for(var i = 0; i < tweets.statuses.length; i++) {
+
+                var pp = Date.parse(tweets.statuses[i].created_at);
+                var newDate = new Date(pp);
+
+                $('#tweetList').append(
+                        "<div class='tbg'>"
+                        + "<img class='t-img' src='" + tweets.statuses[i].user.profile_image_url + "'/>"
+                        + "<div class='user'>" + tweets.statuses[i].user.name + "</div>"
+                        + "<div class='t-date'>" + newDate.getDate() + " " + getMonthName(newDate.getMonth()) + "</div>"
+                        + "<div class='tweet'>" + tweets.statuses[i].text + "</div><div style='clear:both'></div>"
+                        +"</div>");
+
+                if(i == 0){
+                    $('#news').append(
+                        "<div style='display:block'>"
+                        + "<img class='tt-img' src='" + tweets.statuses[i].user.profile_image_url + "'/>"
+                        + "<div class='t-user'>" + tweets.statuses[i].user.name + "</div>"
+                        + "<div class='tt-date'>" + newDate.getDate() + " " + getMonthName(newDate.getMonth()) + "</div>"
+                        + "<div class='t-tweet'>" + tweets.statuses[i].text + "</div><div style='clear:both'></div>"
+                        +"</div>");
+                }else{
+                    $('#news').append(
+                        "<div style='display:none'>"
+                        + "<img class='tt-img' src='" + tweets.statuses[i].user.profile_image_url + "'/>"
+                        + "<div class='t-user'>" + tweets.statuses[i].user.name + "</div>"
+                        + "<div class='tt-date'>" + newDate.getDate() + " " + getMonthName(newDate.getMonth()) + "</div>"
+                        + "<div class='t-tweet'>" + tweets.statuses[i].text + "</div><div style='clear:both'></div>"
+                        +"</div>");
+                }
+            }
+
+            totalEl = tweets.statuses.length;
+            var currentEl = 0;
+            $("#loader").css("visibility","hidden");
+
+            // Bind tweets to the home page
+            var tid = setInterval(function() {
+                $('#news').children().eq(currentEl).slideUp( "slow", function() {
+                    if(currentEl < totalEl - 1)
+                        currentEl += 1;
+                    else
+                        currentEl = 0;
+
+                    $('#news').children().eq(currentEl).fadeIn("slow");
+                });
+            }, 5000);
+        });
+    }
+
+    getTweets();
+
+    function getMonthName(month){
+        var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        for(var i=0; i< months.length; i++){
+            if(i == month){
+                return months[i];
+            }
+        }
+    }
+
+</script>
+
+    <script>
+        
+    </script>
+</body>
+</html>

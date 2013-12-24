@@ -1,0 +1,308 @@
+@font-face {
+	font-family: name-font;
+	src: url('../font/Ubuntu-MI.ttf');
+}
+
+@font-face {
+	font-family: bar-font;
+	src: url('../font/Ubuntu-L.ttf');
+}
+
+.ui-page {
+	background-image:url('../img/bg.jpg');
+}
+
+.gb-name {
+	text-align: center;
+	font-size:1.6em;
+	font-family:name-font;
+	color: #adadad;
+    margin:10px;
+}
+
+.gb-job {
+	text-align: center;
+	font-family:bar-font;
+	font-size: 1.2em;
+}
+
+.gb-img {
+	margin-top: 5em;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+.gb-ct-img {
+    width: 40px;
+    margin-top: 15px;
+    margin-right: 20px;
+    float: right;
+}
+
+.bar-style {
+	font-family:bar-font;
+}
+
+.bag-icon {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 20px;
+}
+
+.center-icon {
+	display: block;
+	margin:auto;
+	padding-top: 20px;
+}
+
+.list {
+	padding: 10px;
+    font-size:.8em;
+    margin-bottom: 55px;
+}
+
+.hlist {
+	margin-top: 20%;
+	padding: 20px;
+    width: 85%;
+    font-family: bar-font;
+}
+
+.hlist a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.page-title {
+	width:100%;
+	height:80px;
+	color: #fff;
+    font-size:1.5em;
+    font-family: bar-font;
+    text-align: center;
+    background-image: url(../img/gb-image.png);
+	background-position: 10px 20px;
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+}
+
+.d-title {
+	float: left;
+	clear: both;
+	color: #fff;
+    font-size:1.2em;
+    font-family: bar-font;
+    margin: 20px 20px 0px 20px;
+}
+
+.title {
+ 	margin:0;
+ 	line-height:80px;
+}
+
+.list .item {
+	background: rgba(194, 194, 194, .1);
+	height: 70px;
+	background-position: center center;
+	vertical-align: middle;
+	margin-top: 20px;
+}
+
+.list a {
+	text-decoration: none;
+	font-family: bar-font;
+}
+
+.list .tt {
+	color:#c2c2c2;
+	margin-top:10px
+}
+
+.a-body {
+	float: left;
+	margin: 20px 10px 20px 20px;
+	font-family: bar-font;
+	line-height:150%;
+	color: #c2c2c2;
+}
+
+.p-header {
+	color: #12B5EA;
+	padding-bottom: 10px;
+}
+
+.gray-header {
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-transform:uppercase;
+}
+
+.back {
+	margin-left: 10px;
+	font-family: bar-font;
+	font-size: 1.3em;
+	text-decoration: none;
+	height: 34px;
+	color: #157dfb;
+}
+
+.right {
+	font-family: bar-font;
+	font-size: 1em;
+	text-decoration: none;
+	color: #157dfb;
+	float: right;
+    margin-top: 25px;
+    margin-right: 12px;
+}
+
+.arrow {
+	float: left;
+	background-size: 24px 44px;
+	background-repeat: no-repeat;
+	padding-left: 28px;
+	padding-top: 18px;
+	background-image: url(../img/backBtn.svg);
+	background-position: left bottom;
+}
+
+.speaker{
+	color:#12B5EA;
+}
+
+.answer{
+	font-style: italic;
+}
+
+.a-img{
+	width: 40%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.tweet{
+	font-family: bar-font;
+	font-size: 1.2em;
+	margin-top: 5px;
+	padding-bottom: 5px;
+	position: relative;
+	word-wrap: break-word;
+	padding-left: 60px;
+	color: #ebebeb;
+}
+
+.t-tweet{
+	float: left;
+	font-family: bar-font;
+	word-wrap: break-word;
+	color: #ebebeb;
+	font-size: .8em;
+	margin-top: 5px;
+	text-align: left;
+	clear: both;
+}
+
+.t-img{
+	float: left;
+	margin: 5px;
+}
+
+.tt-img{
+	float: left;
+}
+
+.user{
+	padding-top: 4px;
+	font-family: bar-font;
+	font-size: 1.2em;
+	position: relative;
+	word-wrap: break-word;
+	padding-left: 60px;
+	color: #12B5EA;
+}
+
+.t-user{
+	font-family: bar-font;
+	font-size: 1.2em;
+	position: relative;
+	word-wrap: break-word;
+	padding-left: 60px;
+	color: #12B5EA;
+}
+
+.article {
+	padding: 12px;
+}
+
+.tbg{
+	background: rgba(194, 194, 194, .1);
+	margin-bottom: 10px;
+}
+
+.abg{
+	background: rgba(194, 194, 194, .1);
+	margin-bottom: 5px;
+	height: 40px;
+}
+
+.ar-bullet{
+	background-image: url(../img/ar.png);
+	background-position: 10px 12px;
+	background-size: 15px;
+	background-repeat: no-repeat;
+}
+
+.vi-bullet{
+	background-image: url(../img/play.png);
+	background-position: 10px 12px;
+	background-size: 15px;
+	background-repeat: no-repeat;
+}
+
+.source{
+	float: left;
+	color: #12B5EA;
+}
+
+.hsource{
+	text-align: center;
+	color: #12B5EA;
+}
+
+.ar-date{
+	float:right;
+	font-size:.8em;
+	color:#c2c2c2;
+	margin-right: -30px;
+	margin-top: 2px;
+}
+
+.t-date{
+	margin-top: -15px;
+	margin-right: 12px;
+    float:right;font-size:.8em;color:#c2c2c2;
+}
+
+.tt-date{
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+    font-size:.8em;color:#c2c2c2;
+}
+
+.ar-title{
+	margin-top:10px;font-size:.9em;color:#c2c2c2;
+}
+
+.har-title{
+	text-align: center;
+    margin: 10px;
+	font-size:.9em;color:#fff;
+}
