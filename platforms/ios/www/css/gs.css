@@ -84,7 +84,7 @@
     font-size:1.5em;
     font-family: bar-font;
     text-align: center;
-    background-image: url(../img/gb-image.png);
+    background-image: url(../img/SteveBolze.png);
 	background-position: 10px 20px;
 	background-size: 40px 40px;
 	background-repeat: no-repeat;
@@ -124,7 +124,7 @@
 
 .a-body {
 	float: left;
-	margin: 20px 10px 20px 20px;
+	margin: 20px 10px 80px 20px;
 	font-family: bar-font;
 	line-height:150%;
 	color: #c2c2c2;
