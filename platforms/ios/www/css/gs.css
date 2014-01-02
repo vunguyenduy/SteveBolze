@@ -66,7 +66,8 @@
 }
 
 .hlist {
-	margin-top: 20%;
+	position: absolute;
+	bottom:8%;
 	padding: 20px;
     width: 85%;
     font-family: bar-font;
@@ -84,7 +85,7 @@
     font-size:1.5em;
     font-family: bar-font;
     text-align: center;
-    background-image: url(../img/SteveBolze.png);
+    background-image: url(../img/AartDeGeus.png);
 	background-position: 10px 20px;
 	background-size: 40px 40px;
 	background-repeat: no-repeat;
