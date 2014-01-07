@@ -198,8 +198,8 @@
         Steve Bolze on Fox Business News 9-14-2011
     </div>
     <div class="a-body">
-        <video id="video1" style="width:300px" controls>
-            <source src="http://54.215.134.149:8080/file/getFile/g1.mp4" type="video/mp4">
+        <video id="video1" style="width:98%" controls>
+            <source src="https://s3-us-west-2.amazonaws.com/fptusa/Steve+Bolze/Steve+Bolze+on+Fox+Business+News+9-14-2011.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
@@ -215,8 +215,8 @@
         Bolze Says GE Aims to Expand Clean Energy Business
     </div>
     <div class="a-body">
-        <video id="video2" style="width:300px" controls>
-            <source src="http://54.215.134.149:8080/file/getFile/g1.mp4" type="video/mp4">
+        <video id="video2" style="width:98%" controls>
+            <source src="https://s3-us-west-2.amazonaws.com/fptusa/Steve+Bolze/Bolze+Says+GE+Aims+to+Expand+Clean+Energy+Business_+Video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
@@ -232,8 +232,8 @@
         Leadership development at GE
     </div>
     <div class="a-body">
-        <video id="video3" style="width:300px" controls>
-            <source src="http://54.215.134.149:8080/file/getFile/g1.mp4" type="video/mp4">
+        <video id="video3" style="width:98%" controls>
+            <source src="https://s3-us-west-2.amazonaws.com/fptusa/Steve+Bolze/Leadership+development+at+GE.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
@@ -249,8 +249,8 @@
         Interview with Stephen R. Bolze - GE FlexEfficiency 50
     </div>
     <div class="a-body">
-        <video id="video4" style="width:300px" controls>
-            <source src="http://54.215.134.149:8080/file/getFile/g1.mp4" type="video/mp4">
+        <video id="video4" style="width:98%" controls>
+            <source src="https://s3-us-west-2.amazonaws.com/fptusa/Steve+Bolze/Interview+with+Stephen+R.+Bolze+-+GE+FlexEfficiency+50.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
@@ -1130,7 +1130,7 @@
     function getTweets() {
         $("#tweetList").html("");
         $("#loader").css("visibility","visible");
-        var twitterAPI = "http://54.215.134.149:8080/data/getdata?type=SearchTweets&q='GeneralElectric'";
+        var twitterAPI = "http://54.201.207.238:8080/data/getdata?type=SearchTweets&q='GeneralElectric'";
         $.getJSON( twitterAPI, {
             format: "json"
         }).done(function( data ) {
