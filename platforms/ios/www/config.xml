@@ -16,6 +16,9 @@
     
     <icon src="img/icons/SteveBolze-icon-57.png" />
     
+    <icon src="img/icons/bb/SteveBolze-icon-68.png" gap:platform="blackberry" />
+    <icon src="img/icons/bb/SteveBolze-icon-68.png" gap:platform="blackberry" gap:state="hover"/>
+
     <icon src="img/icons/SteveBolze-icon-57.png" gap:platform="ios" width="57" height="57" />
     <icon src="img/icons/SteveBolze-icon-72.png" gap:platform="ios" width="72" height="72" />
     <icon src="img/icons/SteveBolze-icon-114.png" gap:platform="ios" width="114" height="114" />
@@ -39,4 +42,10 @@
     <gap:splash src="img/splash/SteveBolze-splash-640x960.png" gap:platform="android" gap:density="mdpi" />
     <gap:splash src="img/splash/SteveBolze-splash-1536x2008.png" gap:platform="android" gap:density="hdpi" />
     <gap:splash src="img/splash/SteveBolze-splash-1536x2008.png" gap:platform="android" gap:density="xhdpi" />
+
+    <!-- For BB-->
+    <gap:splash src="img/splash/SteveBolze-splash-640x960.png" gap:platform="blackberry" />
+
+    <!-- For WP-->
+    <gap:splash src="img/splash/SteveBolze-splash-640x960.png" gap:platform="winphone" />
 </widget>
