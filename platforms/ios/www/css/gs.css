@@ -14,8 +14,19 @@
 	margin: 20px;
 }
 
-.ui-page {
-	background-image:url('../img/bg.jpg');
+.gb-img {
+	margin-top: 5em;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+.gb-img-land {
+	float: left;
+	margin-top: 2em;
+	margin-left: 2em;
+    width: 28%;
 }
 
 .gb-name {
@@ -26,18 +37,33 @@
     margin:10px;
 }
 
+.gb-name-land {
+	position: absolute;
+	float: left;
+	margin-top: 2em;
+	margin-left: 40%;
+	font-size:1.6em;
+	font-family:name-font;
+	color: #adadad;
+}
+
 .gb-job {
 	text-align: center;
 	font-family:bar-font;
 	font-size: 1.2em;
 }
 
-.gb-img {
+.gb-job-land {
+	position: absolute;
+	float: left;
+	font-family:bar-font;
+	font-size: 1.2em;
 	margin-top: 5em;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 45%;
+	margin-left: 40%;
+}
+
+.ui-page {
+	background-image:url('../img/bg.jpg');
 }
 
 .gb-ct-img {

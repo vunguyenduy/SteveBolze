@@ -18,13 +18,13 @@
 <div data-role="page" id="home">
     <div>
         <div>
-            <img class="gb-img" src="img/SteveBolze.png" alt="image"/>
+            <img id="vipImg" class="gb-img-land" src="img/SteveBolze.png" alt="image"/>
         </div>
-        <div class="gb-name">
+        <div id="vipName" class="gb-name-land">
             Steve Bolze
         </div>
-        <div class="gb-job">
-          CEO, General Electric
+        <div id="vipPos" class="gb-job-land">
+            CEO, General Electric
         </div>
 
         <div id="news" class="hlist">
@@ -1199,7 +1199,11 @@
     // Bind an event to window.orientationchange that, when the device is turned,
     // gets the orientation and displays it to on screen.
     $( window ).on( "orientationchange", function( event ) {
-        alert(event.orientation);
+        if(event.orientation == "landscape"){
+
+        }else{
+
+        }
     });
      
     // You can also manually force this event to fire.
