@@ -1199,7 +1199,7 @@
     // Bind an event to window.orientationchange that, when the device is turned,
     // gets the orientation and displays it to on screen.
     $( window ).on( "orientationchange", function( event ) {
-        if((event.orientation == "landscape") && (detectDevice() == "iPhone") || detectDevice() == "Android"){
+        if((event.orientation == "landscape") && ((detectDevice() == "iPhone") || (detectDevice() == "Android")){
             $("#vipImg").removeClass('gb-img').addClass("gb-img-land");
             $("#vipName").removeClass('gb-name').addClass("gb-name-land");
             $("#vipPos").removeClass('gb-job').addClass("gb-job-land");
