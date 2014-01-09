@@ -8,6 +8,12 @@
 	src: url('../font/Ubuntu-L.ttf');
 }
 
+.v-body {
+	float: left;
+	width: 96%;
+	margin: 20px;
+}
+
 .ui-page {
 	background-image:url('../img/bg.jpg');
 }
