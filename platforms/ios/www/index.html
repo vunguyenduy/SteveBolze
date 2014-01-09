@@ -1200,9 +1200,13 @@
     // gets the orientation and displays it to on screen.
     $( window ).on( "orientationchange", function( event ) {
         if(event.orientation == "landscape"){
-
+            $("#vipImg").addClass("gb-img-land");
+            $("#vipName").addClass("gb-name-land");
+            $("#vipPos").addClass("gb-job-land");
         }else{
-
+            $("#vipImg").addClass("gb-img");
+            $("#vipName").addClass("gb-name");
+            $("#vipPos").addClass("gb-job");
         }
     });
      
