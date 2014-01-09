@@ -1200,15 +1200,15 @@
     // gets the orientation and displays it to on screen.
     $( window ).on( "orientationchange", function( event ) {
         if(event.orientation == "landscape"){
-            $("#vipImg").toggleClass("gb-img-land");
-            $("#vipName").toggleClass("gb-name-land");
-            $("#vipPos").toggleClass("gb-job-land");
-            $("#news").toggleClass("hlist-land");
+            $("#vipImg").removeClass('gb-img').addClass("gb-img-land");
+            $("#vipName").removeClass('gb-img').addClass("gb-name-land");
+            $("#vipPos").removeClass('gb-img').addClass("gb-job-land");
+            $("#news").removeClass('gb-img').addClass("hlist-land");
         }else{
-            $("#vipImg").toggleClass("gb-img");
-            $("#vipName").toggleClass("gb-name");
-            $("#vipPos").toggleClass("gb-job");
-            $("#news").toggleClass("hlist");
+            $("#vipImg").removeClass('gb-img-land').addClass("gb-img");
+            $("#vipName").removeClass('gb-img-land').addClass("gb-name");
+            $("#vipPos").removeClass('gb-img-land').addClass("gb-job");
+            $("#news").removeClass('gb-img-land').addClass("hlist");
         }
     });
      
