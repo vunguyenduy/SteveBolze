@@ -18,12 +18,12 @@
 <div data-role="page" id="home">
     <div>
         <div>
-            <img id="vipImg" class="gb-img-land" src="img/SteveBolze.png" alt="image"/>
+            <img id="vipImg" class="gb-img" src="img/SteveBolze.png" alt="image"/>
         </div>
-        <div id="vipName" class="gb-name-land">
+        <div id="vipName" class="gb-name">
             Steve Bolze
         </div>
-        <div id="vipPos" class="gb-job-land">
+        <div id="vipPos" class="gb-job">
             CEO, General Electric
         </div>
 
@@ -1200,13 +1200,19 @@
     // gets the orientation and displays it to on screen.
     $( window ).on( "orientationchange", function( event ) {
         if(event.orientation == "landscape"){
-            $("#vipImg").addClass("gb-img-land");
-            $("#vipName").addClass("gb-name-land");
-            $("#vipPos").addClass("gb-job-land");
+            $("#vipImg").toggleClass("gb-img-land");
+            $("#vipName").toggleClass("gb-name-land");
+            $("#vipPos").toggleClass("gb-job-land");
+            $("#news").toggleClass("hlist-land");
+
+            alert("land");
         }else{
-            $("#vipImg").addClass("gb-img");
-            $("#vipName").addClass("gb-name");
-            $("#vipPos").addClass("gb-job");
+            $("#vipImg").toggleClass("gb-img");
+            $("#vipName").toggleClass("gb-name");
+            $("#vipPos").toggleClass("gb-job");
+            $("#news").toggleClass("hlist");
+
+            alert("port");
         }
     });
      
