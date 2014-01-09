@@ -27,7 +27,7 @@
             CEO, General Electric
         </div>
 
-        <div id="news" class="hlist">
+        <div id="news" class="hlist-land">
             
         </div>
     </div>
@@ -1201,14 +1201,14 @@
     $( window ).on( "orientationchange", function( event ) {
         if(event.orientation == "landscape"){
             $("#vipImg").removeClass('gb-img').addClass("gb-img-land");
-            $("#vipName").removeClass('gb-img').addClass("gb-name-land");
-            $("#vipPos").removeClass('gb-img').addClass("gb-job-land");
-            $("#news").removeClass('gb-img').addClass("hlist-land");
+            $("#vipName").removeClass('gb-name').addClass("gb-name-land");
+            $("#vipPos").removeClass('gb-job').addClass("gb-job-land");
+            $("#news").removeClass('hlist').addClass("hlist-land");
         }else{
             $("#vipImg").removeClass('gb-img-land').addClass("gb-img");
-            $("#vipName").removeClass('gb-img-land').addClass("gb-name");
-            $("#vipPos").removeClass('gb-img-land').addClass("gb-job");
-            $("#news").removeClass('gb-img-land').addClass("hlist");
+            $("#vipName").removeClass('gb-name-land').addClass("gb-name");
+            $("#vipPos").removeClass('gb-job-land').addClass("gb-job");
+            $("#news").removeClass('hlist-land').addClass("hlist");
         }
     });
      

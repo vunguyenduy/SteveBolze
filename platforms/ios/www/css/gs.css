@@ -71,9 +71,10 @@
 }
 
 .hlist-land {
+	float: left;
 	position: absolute;
     font-family: bar-font;
-    margin-top: 120px;
+    margin-top: 130px;
     margin-left: 40%;
 }
 
