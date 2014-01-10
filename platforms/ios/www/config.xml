@@ -27,8 +27,8 @@
     <gap:splash src="img/splash/SteveBolze-splash-768x1004.png" gap:platform="ios" width="768" height="1004" />
     <gap:splash src="img/splash/SteveBolze-splash-1536x2008.png" gap:platform="ios" width="1536" height="2008" />
 
-    <gap:splash src="splash/ios/SteveBolze-splash-1024x748.png" gap:platform="ios" width="1024" height="748" />
-    <gap:splash src="splash/ios/SteveBolze-splash-2048x1496.png" gap:platform="ios" width="2048" height="1496" />
+    <gap:splash src="img/splash/SteveBolze-splash-1024x748.png" gap:platform="ios" width="1024" height="748" />
+    <gap:splash src="img/splash/SteveBolze-splash-2048x1496.png" gap:platform="ios" width="2048" height="1496" />
     
     <!-- For Android-->
     <icon src="img/icons/android/SteveBolze-icon-63.png" gap:platform="android" gap:density="ldpi" />
@@ -39,7 +39,7 @@
     <gap:splash src="img/splash/android/SteveBolze-splash-480x800.png" gap:platform="android" gap:density="ldpi" />
     <gap:splash src="img/splash/android/SteveBolze-splash-480x800.png" gap:platform="android" gap:density="mdpi" />
     <gap:splash src="img/splash/android/SteveBolze-splash-480x800.png" gap:platform="android" gap:density="xhdpi" />
-    
+
     <gap:splash src="img/splash/android/SteveBolze-splash-480x800.png" gap:platform="android" gap:density="hdpi" />
 
     <!-- For BB-->
