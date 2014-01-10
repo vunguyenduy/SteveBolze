@@ -1107,7 +1107,18 @@
     </div>
 </div>
 
+<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
 <script>
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        navigator.splashscreen.show();
+    }
+    
     $('[data-position=fixed]').fixedtoolbar({ tapToggle:false});
     var totalEl = 0;
 
@@ -1235,9 +1246,5 @@
         return deviceType; 
     }
 </script>
-
-    <script>
-        
-    </script>
 </body>
 </html>
