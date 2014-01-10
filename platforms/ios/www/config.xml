@@ -12,6 +12,9 @@
     <access origin="*" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
+    <plugins>
+        <plugin name="SplashScreen" value="CDVSplashScreen" />
+    </plugins>
     
     <icon src="img/icons/SteveBolze-icon-57.png" />
 
@@ -20,16 +23,16 @@
     <icon src="img/icons/SteveBolze-icon-72.png" gap:platform="ios" width="72" height="72" />
     <icon src="img/icons/SteveBolze-icon-114.png" gap:platform="ios" width="114" height="114" />
 
-    <gap:splash src="img/splash/SteveBolze-splash-320x480.png" gap:platform="ios" width="320" height="480" />
-    <gap:splash src="img/splash/SteveBolze-splash-640x960.png" gap:platform="ios" width="640" height="960" />
-    <gap:splash src="img/splash/SteveBolze-splash-640x1136.png" gap:platform="ios" width="640" height="1136" />
-    <gap:splash src="img/splash/SteveBolze-splash-768x1004.png" gap:platform="ios" width="768" height="1004" />
-    <gap:splash src="img/splash/SteveBolze-splash-1536x2008.png" gap:platform="ios" width="1536" height="2008" />
-
     <gap:splash src="img/splash/SteveBolze-splash-1136x640.png" gap:platform="ios" width="1136" height="640" />
     <gap:splash src="img/splash/SteveBolze-splash-960x640.png" gap:platform="ios" width="960" height="640" />
-    <gap:splash src="img/splash/SteveBolze-splash-1024x748.png" gap:platform="ios" width="1024" height="748" />
-    <gap:splash src="img/splash/SteveBolze-splash-2048x1496.png" gap:platform="ios" width="2048" height="1496" />
+    <gap:splash src="img/splash/Default-Landscape~ipad.png" gap:platform="ios" width="1024" height="748" />
+    <gap:splash src="img/splash/Default-Landscape@2x~ipad.png" gap:platform="ios" width="2048" height="1496" />
+
+    <gap:splash src="img/splash/Default~iphone.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="img/splash/Default@2x~iphone.png" gap:platform="ios" width="640" height="960" />
+    <gap:splash src="img/splash/Default-568h@2x~iphone.png" gap:platform="ios" width="640" height="1136" />
+    <gap:splash src="img/splash/Default-Portrait~ipad.png" gap:platform="ios" width="768" height="1004" />
+    <gap:splash src="img/splash/Default-Portrait@2x~ipad.png" gap:platform="ios" width="1536" height="2008" />
     
     <!-- For Android-->
     <icon src="img/icons/android/SteveBolze-icon-63.png" gap:platform="android" gap:density="ldpi" />
@@ -41,8 +44,8 @@
     <gap:splash src="img/splash/android/SteveBolze-splash-480x800.png" gap:platform="android" gap:density="mdpi" />
     <gap:splash src="img/splash/android/SteveBolze-splash-480x800.png" gap:platform="android" gap:density="xhdpi" />
 
-    <gap:splash src="img/splash/android/SteveBolze-splash-480x800.png" gap:platform="android" gap:density="hdpi" />
     <gap:splash src="img/splash/android/SteveBolze-splash-800x480.png" gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="img/splash/android/SteveBolze-splash-480x800.png" gap:platform="android" gap:density="hdpi" />
 
     <!-- For BB-->
     <icon src="img/icons/bb/SteveBolze-icon-68.png" gap:platform="blackberry" />

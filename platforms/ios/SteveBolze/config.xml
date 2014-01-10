@@ -30,4 +30,7 @@
     <access origin="*" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
+    <plugins>
+        <plugin name="SplashScreen" value="CDVSplashScreen" />
+    </plugins>
 </widget>
