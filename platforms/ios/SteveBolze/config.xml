@@ -30,7 +30,8 @@
     <access origin="*" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
-    <plugins>
-        <plugin name="SplashScreen" value="CDVSplashScreen" />
-    </plugins>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+        <param name="onload" value="false" />
+    </feature>
 </widget>
