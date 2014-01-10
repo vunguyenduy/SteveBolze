@@ -45,16 +45,10 @@
     <icon src="img/icons/android/SteveBolze-icon-94.png" gap:platform="android" gap:density="hdpi" />
     <icon src="img/icons/android/SteveBolze-icon-125.png" gap:platform="android" gap:density="xhdpi" />
 
-    <gap:splash src="img/splash/android/SteveBolze-splash-480x800.png" gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="img/splash/android/SteveBolze-splash-480x800.png" gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="img/splash/android/SteveBolze-splash-480x800.png" gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="img/splash/android/SteveBolze-splash-480x800.png" gap:platform="android" gap:density="xhdpi" />
-
-    <gap:splash src="img/splash/android/SteveBolze-splash-800x480.png" gap:platform="android" gap:density="ldpi" width="320" height="200"/>
-    <gap:splash src="img/splash/android/SteveBolze-splash-800x480.png" gap:platform="android" gap:density="hdpi" width="800" height="480"/>
-    <gap:splash src="img/splash/android/SteveBolze-splash-800x480.png" gap:platform="android" gap:density="mdpi" width="400" height="320"/>
-    <gap:splash src="img/splash/android/SteveBolze-splash-800x480.png" gap:platform="android" gap:density="xhdpi" width="1280" height="800"/>
-    <gap:splash src="img/splash/android/SteveBolze-splash-800x480.png" gap:platform="android" gap:density="xhdpi" width="1280" height="720"/>
+    <gap:splash src="img/splash/android/SteveBolze-splash.png" gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="img/splash/android/SteveBolze-splash.png" gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="img/splash/android/SteveBolze-splash.png" gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="img/splash/android/SteveBolze-splash.png" gap:platform="android" gap:density="xhdpi" />
 
     <!-- For BB-->
     <icon src="img/icons/bb/SteveBolze-icon-68.png" gap:platform="blackberry" />
