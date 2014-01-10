@@ -42,6 +42,7 @@
     <gap:splash src="img/splash/android/SteveBolze-splash-480x800.png" gap:platform="android" gap:density="xhdpi" />
 
     <gap:splash src="img/splash/android/SteveBolze-splash-480x800.png" gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="img/splash/android/SteveBolze-splash-800x480.png" gap:platform="android" gap:density="hdpi" />
 
     <!-- For BB-->
     <icon src="img/icons/bb/SteveBolze-icon-68.png" gap:platform="blackberry" />
