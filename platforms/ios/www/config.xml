@@ -14,12 +14,13 @@
     <preference name="webviewbounce" value="true" />
     
     <icon src="img/icons/SteveBolze-icon-57.png" />
+    <gap:splash src="img/splash/SteveBolze-splash" />
 
     <!-- For iOS-->
     <icon src="img/icons/SteveBolze-icon-57.png" gap:platform="ios" width="57" height="57" />
     <icon src="img/icons/SteveBolze-icon-72.png" gap:platform="ios" width="72" height="72" />
     <icon src="img/icons/SteveBolze-icon-114.png" gap:platform="ios" width="114" height="114" />
-    <gap:splash src="img/splash/SteveBolze-splash" gap:platform="ios" />
+    
     <!--
     <gap:splash src="img/splash/SteveBolze-splash-1136x640.png" gap:platform="ios" width="1136" height="640" />
     <gap:splash src="img/splash/SteveBolze-splash-960x640.png" gap:platform="ios" width="960" height="640" />
