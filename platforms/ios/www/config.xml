@@ -26,6 +26,8 @@
     <gap:splash src="img/splash/SteveBolze-splash-768x1004.png" gap:platform="ios" width="768" height="1004" />
     <gap:splash src="img/splash/SteveBolze-splash-1536x2008.png" gap:platform="ios" width="1536" height="2008" />
 
+    <gap:splash src="img/splash/SteveBolze-splash-1136x640.png" gap:platform="ios" width="1136" height="640" />
+    <gap:splash src="img/splash/SteveBolze-splash-960x640.png" gap:platform="ios" width="960" height="640" />
     <gap:splash src="img/splash/SteveBolze-splash-1024x748.png" gap:platform="ios" width="1024" height="748" />
     <gap:splash src="img/splash/SteveBolze-splash-2048x1496.png" gap:platform="ios" width="2048" height="1496" />
     
