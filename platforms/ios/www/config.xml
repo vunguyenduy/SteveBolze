@@ -20,8 +20,9 @@
     <icon src="img/icons/SteveBolze-icon-72.png" gap:platform="ios" width="72" height="72" />
     <icon src="img/icons/SteveBolze-icon-114.png" gap:platform="ios" width="114" height="114" />
 
-    <gap:splash src="img/splash/SteveBolze-splash-640x960.png" gap:platform="ios" width="320" height="480" />
-    <gap:splash src="img/splash/SteveBolze-splash-640x960.png" gap:platform="ios" width="640" height="960" />
+    <gap:splash src="img/splash/SteveBolze-splash-640x1136.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="img/splash/SteveBolze-splash-640x1136.png" gap:platform="ios" width="640" height="960" />
+    <gap:splash src="img/splash/SteveBolze-splash-640x1136.png" gap:platform="ios" width="640" height="1136" />
     <!--<gap:splash src="img/splash/SteveBolze-splash.png" gap:platform="ios" width="1024" height="748" />-->
     <gap:splash src="img/splash/SteveBolze-splash.png" gap:platform="ios" width="2048" height="1496" />
     <gap:splash src="img/splash/SteveBolze-splash.png" gap:platform="ios" width="1536" height="2008" />
